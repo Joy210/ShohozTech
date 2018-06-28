@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>{{ title }} of Articles</h1>
+
+    {% for obj in object_list %}
+
+        <b>{{ obj.id }}</b><br>
+        <a href="{% url 'details' obj.id %}">{{ obj.title }}</a> <br>
+        {{ obj.content }}<br>
+        <br>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
